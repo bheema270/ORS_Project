@@ -1,0 +1,49 @@
+bheemasiddartha@inlevalable:~/Desktop/solo leveling/ORS_project$ /bin/python3 "/home/bheemasiddartha/Desktop/solo leveling/ORS_project/03_ml_phenology_prediction.py"
+[04:54:51] Loading data...
+[04:54:56] Raw data shape: (2111730, 20)
+[04:54:56] Aggregating to time-series (by DATE)...
+[04:54:57] After aggregation: (772, 12)
+[04:54:57] Smoothing NDVI...
+[04:54:57] Creating lag feature...
+[04:54:57] After lag: (769, 13)
+[04:54:57] Splitting train/test (multi-year)...
+[04:54:57] Train size: 724
+[04:54:57] Test size : 45
+[04:54:57] Training model...
+[04:54:57] Training time: 0.40 sec
+[04:54:57] Predicting...
+
+===== FINAL MODEL PERFORMANCE =====
+R²   : 0.782
+RMSE : 0.0231
+[04:54:57] Saved predictions → results_final/predictions.csv
+[04:54:57] Computing feature importance...
+
+===== FEATURE IMPORTANCE =====
+         Feature  Importance  Contribution_%
+       NDVI_lag1      0.9404         94.0422
+             doy      0.0180          1.8026
+         LST_DTR      0.0095          0.9498
+rainfall_mm_8day      0.0067          0.6729
+       ET_mm8day      0.0052          0.5202
+     LST_Night_C      0.0047          0.4654
+           month      0.0042          0.4219
+       LST_Day_C      0.0041          0.4136
+      PET_mm8day      0.0036          0.3608
+       ET_stress      0.0035          0.3508
+
+Top 5 Drivers:
+  NDVI_lag1 → 94.04%
+  doy → 1.80%
+  LST_DTR → 0.95%
+  rainfall_mm_8day → 0.67%
+  ET_mm8day → 0.52%
+
+[INSIGHT] Most important driver: NDVI_lag1
+[04:54:57] TOTAL TIME: 6.37 sec
+[04:54:57] 
+Training Climate-only model...
+
+===== CLIMATE-ONLY MODEL =====
+R²   : 0.393
+RMSE : 0.0385

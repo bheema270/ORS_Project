@@ -1,0 +1,7 @@
+Zone,Target,Best_Model,LOO_R2,LOO_RMSE_days,LOO_MAE_days,Pearson_r,p_value,Significance
+Wet,SOS,Random Forest,-0.1754,13.201,10.469,-0.0628,0.7759,ns
+Wet,EOS,Random Forest,-0.0875,17.684,14.216,0.1268,0.5642,ns
+Wet,LOS,Random Forest,-0.4629,19.157,13.821,-0.3702,0.082,ns
+Dry,SOS,Ridge Regression,-0.0779,15.058,12.557,0.5022,0.0146,*
+Dry,EOS,Random Forest,-0.4783,9.224,6.376,-0.2973,0.1683,ns
+Dry,LOS,Random Forest,-0.0504,14.33,11.578,0.1501,0.4942,ns
