@@ -1,7 +1,0 @@
-Zone,Target,Predicted_2024,Model_used
-Wet,SOS,82.5,Random Forest
-Wet,EOS,359.1,Random Forest
-Wet,LOS,269.4,Random Forest
-Dry,SOS,83.1,Ridge Regression
-Dry,EOS,362.0,Random Forest
-Dry,LOS,293.1,Random Forest
