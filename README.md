@@ -1,15 +1,14 @@
-# 🌿 Modelling Phenological Shifts in Similipal National Park Using MODIS Satellite Data (2001–2024)
+#  Modelling Phenological Shifts in Similipal National Park Using MODIS Satellite Data (2001–2024)
 
-## 📌 Project Overview
+## Project Overview
 This project comprehensively analyzes the seasonal vegetation dynamics and long-term phenological shifts in the core area of Similipal National Park over a 24-year period (2001–2024). Using MODIS satellite data, the study investigates how vegetation phenology (Start of Season, End of Season, Length of Season) responds to climate variables like rainfall, temperature (LST), evapotranspiration (ET), and gross primary productivity (GPP) across different ecological zones (Wet and Dry).
 
-## 🌍 Google Earth Engine (GEE) Visualizations
+##  Google Earth Engine (GEE) Visualizations
 The raw satellite imagery, multi-band indices, and exported visualizations (`.tif` format) that form the baseline of this analysis can be accessed via the following Google Drive repositories:
 
-* 🔗 **[GEE Visualizations - Part 1](https://drive.google.com/drive/folders/1lCIWgGxC5x4JEQtRb2MO4RILhuAqzUxn)**
-* 🔗 **[GEE Visualizations - Part 2](https://drive.google.com/drive/folders/1MG3pUYA5VxOcHwuG2aCWQRYo4Q19yQaU)**
+* **[GEE Visualizations - Part 1](https://drive.google.com/drive/folders/1lCIWgGxC5x4JEQtRb2MO4RILhuAqzUxn)**
 
-## 📂 Project Structure
+##  Project Structure
 
 The data processing, phenology extraction, and machine learning prediction pipelines are split into three primary Python scripts:
 
@@ -34,14 +33,14 @@ The data processing, phenology extraction, and machine learning prediction pipel
 * Implements robust tree-based regression models, primarily **Random Forest** and **XGBoost**.
 * Evaluates model performance and feature importance to understand which climate drivers most heavily influence the changing seasons.
 
-## 📊 Key Findings
+## Key Findings
 
 Detailed interpretations of all generated plots can be found in `analysis.md`. A brief summary of findings:
 * **Productivity is Increasing:** Both Wet and Dry zones show a statistically significant long-term greening trend (integrated NDVI).
 * **Phenological Shifts:** The Start of Season (SOS) in the Dry zone is delaying by approximately +1 day/year, likely due to warming pre-monsoon temperatures. Overall, the End of Season (EOS) is also delaying, keeping vegetation greener for longer.
 * **Climate Drivers:** Vegetation growth is heavily monsoon-driven, responding to rainfall with a ~1-month lag. While water availability drives growth, high pre-monsoon temperatures act as a limiting stress factor.
 
-## 🚀 How to Run
+## How to Run
 
 1. **Install Dependencies:**
    Ensure you have all required Python libraries installed:
